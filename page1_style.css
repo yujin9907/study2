@@ -1,0 +1,74 @@
+header{
+    margin-bottom: 100px;
+}
+
+.pagemain{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 30px;
+    position: relative;
+    left: 65vh;
+    z-index: 99999;
+    width: 135vh;
+}
+
+/* 원래 제목 제외한 글을 */
+/* article로 감싸주려고 했는데 */
+/* 상속 때문에 aricle 없앰(margin-bottom 줄 자꾸 생겨서)
+    아래 방법으로 해결
+*/
+
+article{
+    border-bottom: none !important;
+}
+
+h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.pagedata{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(46, 43, 43, 0.075);
+}
+
+#datawriter{
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+#datadate{
+    color: #4c4e5093;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none !important;
+    color: #96c0e9 !important;
+    margin-left: .83px;
+}
+
+#pageimage{
+    width: 100%;
+}
+
+.btn_bottom{
+    outline: 0;
+    border: 1px solid rgba(46, 43, 43, 0.247);
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: white;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.pagecontent{
+    margin: 20px;
+}
+
